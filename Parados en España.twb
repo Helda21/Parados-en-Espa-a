@@ -1,0 +1,740 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.24.0308.1659                               -->
+<workbook original-version='18.1' source-build='2022.1.23 (20221.24.0308.1659)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='parados_Espana' inline='true' name='federated.0fuheej1susp381azqm3d1q2anh5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='parados_Espana' name='semistructpassivestore-direct.0jts99a1jcu5ub11x4ym11m99ahw'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/HelioEspinosa/Downloads/Curso Tableau' filename='parados_Espana.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[parados_Espana.json]'>
+                  <map key='Datos' value='true' />
+                  <map key='Datos.Metricas' value='true' />
+                  <map key='Datos.Metricas.Value' value='true' />
+                  <map key='Datos.Metricas.Value.Datos' value='true' />
+                  <map key='Datos.Metricas.Value.Datos.Value' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='semistructpassivestore-direct.0jts99a1jcu5ub11x4ym11m99ahw' name='parados_Espana.json' table='[parados_Espana.json]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='semistructpassivestore-direct.0jts99a1jcu5ub11x4ym11m99ahw' name='parados_Espana.json' table='[parados_Espana.json]' type='table' />
+        <cols>
+          <map key='[Agno]' value='[parados_Espana.json].[Datos.Metricas.Value.Datos.Value.Agno]' />
+          <map key='[Datos Índice (generado)]' value='[parados_Espana.json].[Datos.Metricas.Value.Datos.Index (generated)]' />
+          <map key='[Document Index (generated)]' value='[parados_Espana.json].[Document Index (generated)]' />
+          <map key='[EscalaFactorPotencia10]' value='[parados_Espana.json].[Datos.Metricas.Value.EscalaFactorPotencia10]' />
+          <map key='[Escala]' value='[parados_Espana.json].[Datos.Metricas.Value.Escala]' />
+          <map key='[Estado]' value='[parados_Espana.json].[Datos.Metricas.Value.Datos.Value.Estado]' />
+          <map key='[Fuente]' value='[parados_Espana.json].[Datos.Metricas.Value.Fuente]' />
+          <map key='[Id (Datos.Metricas.Value)]' value='[parados_Espana.json].[Datos.Metricas.Value.Id]' />
+          <map key='[Id]' value='[parados_Espana.json].[Id]' />
+          <map key='[Metricas Índice (generado)]' value='[parados_Espana.json].[Datos.Metricas.Index (generated)]' />
+          <map key='[Nombre]' value='[parados_Espana.json].[Datos.Metricas.Value.Nombre]' />
+          <map key='[Notas]' value='[parados_Espana.json].[Datos.Metricas.Value.Datos.Value.Notas]' />
+          <map key='[Parametro]' value='[parados_Espana.json].[Datos.Metricas.Value.Datos.Value.Parametro]' />
+          <map key='[Periodo]' value='[parados_Espana.json].[Datos.Metricas.Value.Datos.Value.Periodo]' />
+          <map key='[SonDatosNumericos]' value='[parados_Espana.json].[Datos.Metricas.Value.SonDatosNumericos]' />
+          <map key='[Subtitulo]' value='[parados_Espana.json].[Subtitulo]' />
+          <map key='[Titulo]' value='[parados_Espana.json].[Titulo]' />
+          <map key='[Unidad]' value='[parados_Espana.json].[Datos.Metricas.Value.Unidad]' />
+          <map key='[Url]' value='[parados_Espana.json].[Url]' />
+          <map key='[Valor]' value='[parados_Espana.json].[Datos.Metricas.Value.Datos.Value.Valor]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Metricas Índice (generado)]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Datos.Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Datos Índice (generado)]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Datos.Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Datos.Value.Agno</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Agno]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Datos.Value.Agno</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Datos.Value.Estado</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Estado]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Datos.Value.Estado</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Datos.Value.Notas</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Notas]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Datos.Value.Notas</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Datos.Value.Parametro</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Parametro]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Datos.Value.Parametro</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Datos.Value.Periodo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Periodo]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Datos.Value.Periodo</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Datos.Value.Valor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Valor]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Datos.Value.Valor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Escala</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Escala]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Escala</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.EscalaFactorPotencia10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EscalaFactorPotencia10]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.EscalaFactorPotencia10</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Fuente</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Fuente]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Fuente</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Id (Datos.Metricas.Value)]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Id</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Nombre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Nombre]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Nombre</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.SonDatosNumericos</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SonDatosNumericos]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.SonDatosNumericos</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datos.Metricas.Value.Unidad</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Unidad]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Datos.Metricas.Value.Unidad</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subtitulo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Subtitulo]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Subtitulo</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Titulo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Titulo]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Titulo</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Url]</local-name>
+            <parent-name>[parados_Espana.json]</parent-name>
+            <remote-alias>Url</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' default-role='measure' default-type='quantitative' hidden='true' is-auto-gen-lod-field='true' name='[Agno per Datos]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)],[Datos Índice (generado)],[Metricas Índice (generado)] : MAX([Agno]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al Datos de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' datatype-customized='true' default-role='measure' default-type='quantitative' name='[Agno]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Datos.Value.Agno</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Parados' datatype='real' name='[Calculation_1501669006187077632]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Valor] * 1000' />
+      </column>
+      <column datatype='integer' hidden='true' name='[Datos Índice (generado)]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Datos.Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' hidden='true' name='[Document Index (generated)]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[EscalaFactorPotencia10 per Metricas]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)],[Metricas Índice (generado)] : MAX([EscalaFactorPotencia10]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al Metricas de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' name='[EscalaFactorPotencia10]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.EscalaFactorPotencia10</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Escala]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Escala</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Estado]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Datos.Value.Estado</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Fuente]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Fuente</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' datatype='real' hidden='true' name='[Id (Datos.Metricas.Value)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' hidden='true' name='[Metricas Índice (generado)]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Nombre]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Nombre</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Notas]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Datos.Value.Notas</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' hidden='true' is-auto-gen-lod-field='true' name='[Number of Records per Datos]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Document Index (generated)],[Metricas Índice (generado)] : COUNTD([Datos Índice (generado)]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al Datos de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' hidden='true' is-auto-gen-lod-field='true' name='[Number of Records per Metricas]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Document Index (generated)] : COUNTD([Metricas Índice (generado)]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al Metricas de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' hidden='true' is-auto-gen-lod-field='true' name='[Number of Records per parados_Espana.json]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al parados_Espana.json de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Parametro]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Datos.Value.Parametro</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Periodo]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Datos.Value.Periodo</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Son Datos Numericos' datatype='boolean' hidden='true' name='[SonDatosNumericos]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.SonDatosNumericos</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Subtitulo]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Subtitulo</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Titulo]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Titulo</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Unidad]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Unidad</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' hidden='true' name='[Url]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Url</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Valor per Datos]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)],[Datos Índice (generado)],[Metricas Índice (generado)] : MAX([Valor]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al Datos de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Count' datatype='real' datatype-customized='true' name='[Valor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Datos.Metricas.Value.Datos.Value.Valor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='parados_Espana.json' datatype='table' name='[__tableau_internal_object_id__].[parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F]' role='measure' type='quantitative' />
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Datos' role='dimensions'>
+        <folder-item name='[Estado]' type='field' />
+        <folder-item name='[Notas]' type='field' />
+        <folder-item name='[Parametro]' type='field' />
+        <folder-item name='[Periodo]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Medidas de fuente' role='measures'>
+        <folder-item name='[Agno]' type='field' />
+        <folder-item name='[Calculation_1501669006187077632]' type='field' />
+        <folder-item name='[EscalaFactorPotencia10]' type='field' />
+        <folder-item name='[Valor]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Metricas' role='dimensions'>
+        <folder-item name='[Escala]' type='field' />
+        <folder-item name='[Fuente]' type='field' />
+        <folder-item name='[Id (Datos.Metricas.Value)]' type='field' />
+        <folder-item name='[Nombre]' type='field' />
+        <folder-item name='[SonDatosNumericos]' type='field' />
+        <folder-item name='[Unidad]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='parados Espana' role='dimensions'>
+        <folder-item name='[Id]' type='field' />
+        <folder-item name='[Subtitulo]' type='field' />
+        <folder-item name='[Titulo]' type='field' />
+        <folder-item name='[Url]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Datos'>
+          <folder-item name='[Estado]' type='field' />
+          <folder-item name='[Notas]' type='field' />
+          <folder-item name='[Parametro]' type='field' />
+          <folder-item name='[Periodo]' type='field' />
+        </folder>
+        <folder name='Medidas de fuente'>
+          <folder-item name='[Agno]' type='field' />
+          <folder-item name='[Calculation_1501669006187077632]' type='field' />
+          <folder-item name='[EscalaFactorPotencia10]' type='field' />
+          <folder-item name='[Valor]' type='field' />
+        </folder>
+        <folder name='Metricas'>
+          <folder-item name='[Escala]' type='field' />
+          <folder-item name='[Fuente]' type='field' />
+          <folder-item name='[Id (Datos.Metricas.Value)]' type='field' />
+          <folder-item name='[Nombre]' type='field' />
+          <folder-item name='[SonDatosNumericos]' type='field' />
+          <folder-item name='[Unidad]' type='field' />
+        </folder>
+        <folder name='parados Espana'>
+          <folder-item name='[Id]' type='field' />
+          <folder-item name='[Subtitulo]' type='field' />
+          <folder-item name='[Titulo]' type='field' />
+          <folder-item name='[Url]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Colombia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Agno' />
+        <field-sort-custom-order field='Periodo' />
+        <field-sort-custom-order field='Valor' />
+        <field-sort-custom-order field='Calculation_1501669006187077632' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='parados_Espana.json' id='parados_Espana.json_E9FE8BC5BC764AA0A9310619790EB66F'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.0jts99a1jcu5ub11x4ym11m99ahw' name='parados_Espana.json' table='[parados_Espana.json]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='parados_Espana' name='federated.0fuheej1susp381azqm3d1q2anh5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fuheej1susp381azqm3d1q2anh5'>
+            <column caption='Parados' datatype='real' name='[Calculation_1501669006187077632]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Valor] * 1000' />
+            </column>
+            <column datatype='string' name='[Periodo]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>Datos.Metricas.Value.Datos.Value.Periodo</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Count' datatype='real' datatype-customized='true' name='[Valor]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>Datos.Metricas.Value.Datos.Value.Valor</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Periodo]' derivation='None' name='[none:Periodo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1501669006187077632]' derivation='Sum' name='[sum:Calculation_1501669006187077632:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fuheej1susp381azqm3d1q2anh5].[none:Periodo:nk]' value='110' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fuheej1susp381azqm3d1q2anh5].[sum:Calculation_1501669006187077632:qk]</rows>
+        <cols>[federated.0fuheej1susp381azqm3d1q2anh5].[none:Periodo:nk]</cols>
+      </table>
+      <simple-id uuid='{79B1A09F-2D72-49BE-9186-3152F1524FED}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='106'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='20'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fuheej1susp381azqm3d1q2anh5].[none:Periodo:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DFCF96F8-402D-48BB-96E8-FBF89B008989}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
